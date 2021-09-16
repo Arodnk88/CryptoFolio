@@ -70,9 +70,9 @@
 * coinmarketcap.com
   * Recommended plan - Standart. If you take a tariff plan at cheaper - pre-loading of historical courses will not be available
   * You can change the `$schedule->command('rate:refresh')->everyMinute();` string in the file `app/Console/Commands/Kernel.php` on:
-    a) `$schedule->command('rate:refresh')->everyFiveMinutes();` - when you first start, not to spend in advance all API loans.
-    b) `$schedule->command('rate:refresh')->everyThirtyMinutes();` - if the you want to use free plan
-    c) Comment this string to manually update currency rates. To update, you must run `php artisan rate:refresh` in the console from the project directory. 
+    * `$schedule->command('rate:refresh')->everyFiveMinutes();` - when you first start, not to spend in advance all API loans.
+    * `$schedule->command('rate:refresh')->everyThirtyMinutes();` - if the you want to use free plan
+    * Comment this string to manually update currency rates. To update, you must run `php artisan rate:refresh` in the console from the project directory. 
 
 * cryptoapis.com
   * You can skip this step if you do not need the RealTime function of balance updates!
